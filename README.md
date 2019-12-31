@@ -15,6 +15,14 @@ something like that with a genetic algorithm is maybe not the most appropriate
 application of a genetic algorithm
 but I thought it would be a fun experiment and all the code was right there so I tried it.
 
+The main premise of what I did was change the DNA objects to use 6 genes: r, g, b color
+values for foreground and r, g, b, color values for background. I also added
+sliders to control the mutation rate and to control how frequently a child is a clone
+of the parent rather than a mix of both parents.
+
 If the video or this example is interesting, (if anyone ever even sees this? maybe a robot)
 I suggest looking into the [Nature of Code Book](https://natureofcode.com/) and the
 rest of the video series.
+
+The code of the Nature of Code series is licensed under the GNU Lesser General Public License 2.1
+according to the [Nature of Code website](https://natureofcode.com/). 
