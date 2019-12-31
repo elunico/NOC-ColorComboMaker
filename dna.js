@@ -19,17 +19,14 @@ class DNA {
       this.genes = new Array(len);
       // for (let i = 0; i < this.genes.length; i++) {
       // background
-      this.genes[0] = {
-        red: random(1),
-        blue: random(1),
-        green: random(1)
-      };
+      this.genes[0] = random(1);
+      this.genes[1] = random(1);
+      this.genes[2] = random(1);
+
       // foreground
-      this.genes[1] = {
-        red: random(1),
-        blue: random(1),
-        green: random(1)
-      };
+      this.genes[3] = random(1);
+      this.genes[4] = random(1);
+      this.genes[5] = random(1);
 
       // }
     }
@@ -62,11 +59,7 @@ class DNA {
   mutate(m) {
     for (let i = 0; i < this.genes.length; i++) {
       if (random(1) < m) {
-        this.genes[i] = {
-          red: random(1),
-          blue: random(1),
-          green: random(1)
-        };
+        this.genes[i] = random(1)
       }
     }
   }

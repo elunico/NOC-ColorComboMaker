@@ -35,13 +35,11 @@ class ColorScheme {
     colorMode(RGB);
     noStroke();
 
-    let gene = genes[0];
-    fill(gene.red, gene.green, gene.blue);
+    fill(genes[0], genes[1], genes[2]);
     rect(0, 0, this.wh, this.wh);
 
-    gene = genes[1];
     textAlign(CENTER, CENTER);
-    fill(gene.red, gene.green, gene.blue);
+    fill(genes[3], genes[4], genes[5]);
     textSize(16);
     text('Sample Text', 0, 0);
 
